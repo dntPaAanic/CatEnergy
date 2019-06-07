@@ -34,7 +34,7 @@ gulp.task("css", function () {
 });
 
 gulp.task("cssdev", function () {
-  return gulp.src("source/less/style.scss")
+  return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
@@ -143,4 +143,4 @@ gulp.task("build", gulp.series(
 ));
 
 gulp.task("start", gulp.series("css", "server"));
-gulp.task("startdev", gulp.series("serverdev"));
+gulp.task("startdev", gulp.series("cssdev", "serverdev"));
