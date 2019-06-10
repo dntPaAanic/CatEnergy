@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-width: 320px;
+
+  font-weight: normal;
+  font-size: $font-size;
+  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  color: $font-color-main;
+  font-style: normal;
+
+  background-color: $background-main;
+}
+
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
+
+  border: none;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
