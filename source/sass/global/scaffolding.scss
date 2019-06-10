@@ -5,11 +5,11 @@ body {
 
   font-weight: normal;
   font-size: $font-size;
-  font-family: "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-family: $font-family-main;
   color: $font-color-main;
   font-style: normal;
 
-  background-color: $background-main;
+  background-color: $background-color-main;
 }
 
 blockquote {

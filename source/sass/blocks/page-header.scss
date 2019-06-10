@@ -1,4 +1,13 @@
 .page-header {
-  display: flex;
-  flex-direction: column;
+  background-color: $background-color-main;
+}
+
+.page-header__logo-wrapper {
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+}
+
+.page-header__logo {
+  width: 191px;
 }
