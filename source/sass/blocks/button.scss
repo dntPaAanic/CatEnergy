@@ -1,0 +1,19 @@
+.button {
+  max-width: 100%;
+  font-weight: 400;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 18px;
+  background-color: $background-color-button;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}

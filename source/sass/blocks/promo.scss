@@ -1,18 +1,55 @@
 .promo {
-  padding-top: 29px;
-  color: white;
-  font-weight: 400;
-  box-sizing: border-box;
   position: relative;
 
+  box-sizing: border-box;
+  padding-top: 29px;
+
+  font-weight: 400;
+  color: white;
+
   &::before {
-    position: absolute;
     content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+
     width: 100%;
-    background-image: url("../img/background-intro-mobile@1x.jpg"), linear-gradient(to right, #65a93c 48%, #63a73a 52%);;
+    height: 305px;
+
+    background-image: url("../img/index-background-mobile@1x.jpg"), linear-gradient(to right, #65a93c 48%, #63a73a 52%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
   }
 }
 
 .promo__wrapper {
   @include container;
+}
+
+.promo__title {
+  margin: 0 auto 25px;
+  padding: 0;
+
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.promo__slogan {
+  font-weight: 400;
+  line-height: 14px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+
+.promo__button {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
 }
