@@ -1,0 +1,18 @@
+.promo {
+  padding-top: 29px;
+  color: white;
+  font-weight: 400;
+  box-sizing: border-box;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    background-image: url("../img/background-intro-mobile@1x.jpg"), linear-gradient(to right, #65a93c 48%, #63a73a 52%);;
+  }
+}
+
+.promo__wrapper {
+  @include container;
+}
