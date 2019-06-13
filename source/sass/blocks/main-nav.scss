@@ -1,14 +1,12 @@
-.main-nav {
+.main-nav__wrapper {
+  @include container;
   position: relative;
-
-  /*min-height: 65px;*/
 }
-
 
 .main-nav__toggle {
   position: absolute;
-  top: -50px;
-  right: 20px;
+  top: 17px;
+  right: 0;
   z-index: 2;
 
   display: block;
@@ -77,12 +75,18 @@
 }
 
 @media (min-width: $tablet-width) {
-  .main-nav {
-    padding-right: 20px;
+  .main-nav__main-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include container;
+  }
+
+  .main-nav__wrapper {
+    width: 200px;
   }
 
   .main-nav__toggle {
     display: none;
   }
 }
-

@@ -11,11 +11,3 @@
 .page-header__logo {
   width: 191px;
 }
-
-@media (min-width: $tablet-width) {
-  .page-header__wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
