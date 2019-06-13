@@ -1,13 +1,15 @@
 .button {
+  display: inline-block;
   max-width: 100%;
+
   font-weight: 400;
+  line-height: 18px;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  line-height: 18px;
-  background-color: $background-color-button;
-  display: inline-block;
   text-decoration: none;
-  text-align: center;
+
+  background-color: $background-color-button;
 
   &:hover {
     background-color: #5eaa2f;

@@ -40,12 +40,13 @@
 }
 
 .promo__slogan {
+  margin-bottom: 27px;
+
   font-weight: 400;
   line-height: 14px;
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-bottom: 27px;
 }
 
 .promo__button {
@@ -61,11 +62,24 @@
     }
   }
 
+  .promo__wrapper {
+    padding-left: 159px;
+  }
+
   .promo__title {
-    color: $font-color-header;
+    max-width: 450px;
+    margin: 0;
+
     font-size: 60px;
     line-height: 60px;
     text-align: left;
-    max-width: 450px;
+    color: $font-color-header;
+  }
+
+  .promo__slogan {
+    color: $font-color-header;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
   }
 }
