@@ -47,28 +47,39 @@
 }
 
 .program__link {
-  color: #111111;
+  position: relative;
+  z-index: 10;
+
+  padding-right: 10px;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
+  color: #111111;
   text-transform: uppercase;
   text-decoration: none;
-  position: relative;
-  padding-right: 40px;
+  transition: 0.3s;
+  background-color: #f2f2f2;
 
   &::after {
-    bottom: 6px;
-    position: absolute;
-
     content: "";
-    right: 0;
-    background-image: url("../img/1icon-right-arrow-verylong.svg");
+    position: absolute;
+    right: -28px;
+    bottom: 0;
+    z-index: -1;
+
     width: 37px;
+    height: 12px;
+
+    background-image: url("../img/icon-right-arrow-verylong.svg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 12px;
-    transition: 0.3s;
-    transition-property: left, width;
     transform: translateY(-50%);
+    transition: 0.3s;
+  }
+
+  &:hover::after {
+    right: -35px;
   }
 }
+
