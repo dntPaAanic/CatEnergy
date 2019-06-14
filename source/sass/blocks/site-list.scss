@@ -68,3 +68,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .site-list a {
+    background-color: transparent;
+  }
+}
