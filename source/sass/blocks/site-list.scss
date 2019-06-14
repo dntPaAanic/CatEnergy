@@ -72,5 +72,24 @@
 @media (min-width: $desktop-width) {
   .site-list a {
     background-color: transparent;
+    font-size: 20px;
+    line-height: 24.86px;
+    color: #ffffff;
+  }
+
+  .site-list a[href] {
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+  .site-list__item--active {
+    &::after {
+      background-color: #ffffff;
+    }
   }
 }

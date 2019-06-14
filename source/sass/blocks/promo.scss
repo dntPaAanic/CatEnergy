@@ -105,8 +105,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 661px;
+    min-height: 520px;
     position: static;
+    padding-top: 114px;
     &::after {
       content: "";
       position: absolute;
@@ -124,5 +125,14 @@
       background-position: 0%;
       background-size: cover;
     }
+  }
+
+  .promo__wrapper {
+    height: 520px;
+  }
+
+  .promo__img {
+    bottom: 100px;
+    left: 535px;
   }
 }
