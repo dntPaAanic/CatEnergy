@@ -1,0 +1,17 @@
+.programs {
+  @include container;
+}
+
+.programs__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__item {
+  width: 100%;
+  margin-bottom: 20px;
+  background-color: $background-color-lightgrey;
+}

@@ -61,9 +61,11 @@
       content: "";
       position: absolute;
       right: 0;
+      bottom: 30px;
       left: 0;
-      bottom: 15px;
+
       height: 2px;
+
       background-color: #68b738;
     }
   }
@@ -71,10 +73,11 @@
 
 @media (min-width: $desktop-width) {
   .site-list a {
-    background-color: transparent;
     font-size: 20px;
-    line-height: 24.86px;
+    line-height: 24px;
     color: #ffffff;
+
+    background-color: transparent;
   }
 
   .site-list a[href] {
@@ -88,7 +91,16 @@
   }
 
   .site-list__item--active {
+    position: relative;
     &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 30px;
+      left: 0;
+
+      height: 2px;
+
       background-color: #ffffff;
     }
   }

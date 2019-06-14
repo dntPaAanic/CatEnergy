@@ -5,6 +5,7 @@
   padding-top: 29px;
 
   font-weight: 400;
+  margin-bottom: 22px;
   color: #ffffff;
 
   &::before {
@@ -105,8 +106,9 @@
 
 @media (min-width: $desktop-width) {
   .promo {
-    min-height: 520px;
     position: static;
+
+    min-height: 520px;
     padding-top: 114px;
     &::after {
       content: "";
@@ -122,13 +124,21 @@
       background-color: #63a73a;
       background-image: url("../img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
-      background-position: 0%;
+      background-position: 0;
       background-size: cover;
     }
   }
 
   .promo__wrapper {
     height: 520px;
+  }
+
+  .promo__title {
+    margin-bottom: 33px;
+  }
+
+  .promo__slogan {
+    margin-bottom: 52px;
   }
 
   .promo__img {
