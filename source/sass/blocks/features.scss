@@ -13,6 +13,9 @@
 }
 
 .features__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
   margin: 0;
   padding: 0;
 
@@ -24,6 +27,8 @@
 
   display: flex;
   margin-bottom: 20px;
+
+  font-family: $font-family-additional;
 
 
   &::before {
@@ -41,3 +46,11 @@
   }
 }
 
+.features__description {
+  box-sizing: border-box;
+  margin: 0;
+  padding-top: 3px;
+  padding-bottom: 0;
+
+  line-height: 18px;
+}
