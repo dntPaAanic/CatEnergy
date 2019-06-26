@@ -126,11 +126,26 @@
         <div class="example__compare compare">
           <div class="compare__wrapper">
             <div class="compare__pictures">
-              <div class="compare__picture-before">
-                <img src="img/before-mobile@1x.png" alt="До похудения">
+              <div class="compare__before-picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x" type="image/webp">
+
+                  <source media="(min-width: 1300px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img class="compare__picture compare__picture-before " src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="До похудения">
+                </picture>
               </div>
-              <div class="compare__picture-after">
-                <img src="img/after-mobile@1x.png" alt="После похудения">
+              <div class="compare__after-picture-wrapper">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x" type="image/webp">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x" type="image/webp">
+                  <source srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x" type="image/webp">
+
+                  <source media="(min-width: 1300px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                <img class="compare__picture compare__picture-after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="После похудения">
               </div>
             </div>
           </div>
