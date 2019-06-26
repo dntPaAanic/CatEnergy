@@ -1,0 +1,25 @@
+.example {
+  background-color: $background-color-lightgrey;
+}
+
+.example__wrapper {
+  @include container;
+}
+
+.example__title {
+  font-size: 36px;
+  color: $font-color-header;
+  line-height: 60px;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 33px;
+}
+
+.example__description {
+  font-family: $font-family-additional;
+  line-height: 18px;
+  margin-top: 0;
+  margin-bottom: 27px;
+}
+
+

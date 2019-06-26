@@ -70,12 +70,6 @@
   font-family: $font-family-additional;
 
   border-bottom: 1px solid #d9d9d9;
-
-  br {
-    &:last-of-type {
-      display: none;
-    }
-  };
 }
 
 .program__link {
@@ -140,12 +134,32 @@
   .program__description {
     font-size: 16px;
     line-height: 24px;
+    border-bottom: none;
+  }
 
-    br {
-      &:last-of-type {
-        display: block;
-      }
+  .program__icon--losing-weight {
+    &::after {
+      width: 140px;
+      height: 194px;
+      background-image: url("../../img/icon-cat-slim.svg");
+      top: -12px;
+      left: 30px;
     }
+  }
+
+  .program__icon--weight-gain {
+    &::after {
+      width: 268px;
+      height: 112px;
+      background-image: url("../img/icon-cat-pro.svg");
+      top: 43px;
+      left: -36px;
+    }
+  }
+
+  .program__link {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
