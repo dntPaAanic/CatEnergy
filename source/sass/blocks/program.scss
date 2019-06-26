@@ -20,29 +20,34 @@
   border-radius: 50%;
 
   &::after {
-    position: absolute;
     content: "";
+    position: absolute;
+
     background-repeat: no-repeat;
   }
 }
 
 .program__icon--losing-weight {
   &::after {
-    width: 35px;
-    height: 49px;
-    background-image: url("../../img/icon-cat-slim.svg");
     top: -1px;
     left: 8px;
+
+    width: 35px;
+    height: 49px;
+
+    background-image: url("../../img/icon-cat-slim.svg");
   }
 }
 
 .program__icon--weight-gain {
   &::after {
-    width: 67px;
-    height: 28px;
-    background-image: url("../img/icon-cat-pro.svg");
     top: 11px;
     left: -9px;
+
+    width: 67px;
+    height: 28px;
+
+    background-image: url("../img/icon-cat-pro.svg");
   }
 }
 
@@ -84,8 +89,10 @@
   color: #111111;
   text-transform: uppercase;
   text-decoration: none;
+
+  background-color: $background-color-lightgrey;
+
   transition: 0.3s;
-  background-color: #f2f2f2;
 
   &::after {
     content: "";
@@ -101,6 +108,7 @@
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-50%);
+
     transition: 0.3s;
   }
 
@@ -112,48 +120,55 @@
 @media (min-width: $tablet-width) {
   .program {
     padding-top: 78px;
-    padding-left: 53px;
     padding-right: 280px;
     padding-bottom: 40px;
+    padding-left: 53px;
   }
 
   .program__icon {
-    width: 200px;
-    height: 200px;
-    left: auto;
     top: 90px;
     right: 62px;
+    left: auto;
+
+    width: 200px;
+    height: 200px;
   }
 
   .program__title {
+    margin-left: 0;
+
     font-size: 36px;
     line-height: 36px;
-    margin-left: 0;
   }
 
   .program__description {
     font-size: 16px;
     line-height: 24px;
+
     border-bottom: none;
   }
 
   .program__icon--losing-weight {
     &::after {
-      width: 140px;
-      height: 194px;
-      background-image: url("../../img/icon-cat-slim.svg");
       top: -12px;
       left: 30px;
+
+      width: 140px;
+      height: 194px;
+
+      background-image: url("../../img/icon-cat-slim.svg");
     }
   }
 
   .program__icon--weight-gain {
     &::after {
-      width: 268px;
-      height: 112px;
-      background-image: url("../img/icon-cat-pro.svg");
       top: 43px;
       left: -36px;
+
+      width: 268px;
+      height: 112px;
+
+      background-image: url("../img/icon-cat-pro.svg");
     }
   }
 
@@ -162,4 +177,3 @@
     line-height: 20px;
   }
 }
-

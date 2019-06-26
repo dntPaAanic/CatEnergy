@@ -1,6 +1,7 @@
 .features__wrapper {
-  @include container;
   padding-bottom: 22px;
+
+  @include container;
 }
 
 .features__title {
@@ -50,8 +51,8 @@
 .features__item--leaf {
   &::before {
     background-image: url("../img/advantage-leaf@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
       background-image: url("../img/advantage-leaf@2x.png");
@@ -62,8 +63,8 @@
 .features__item--powder {
   &::before {
     background-image: url("../img/advantage-powder@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
       background-image: url("../img/advantage-powder@2x.png");
@@ -74,8 +75,8 @@
 .features__item--dining {
   &::before {
     background-image: url("../img/advantage-dining@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
       background-image: url("../img/advantage-dining@2x.png");
@@ -86,8 +87,8 @@
 .features__item--clock {
   &::before {
     background-image: url("../img/advantage-clock@1x.png");
-    background-position: center;
     background-repeat: no-repeat;
+    background-position: center;
 
     @media (min-resolution: $retina-dpi), (min-resolution:$retina-dppx) {
       background-image: url("../img/advantage-clock@2x.png");
@@ -110,10 +111,11 @@
   }
 
   .features__item {
-    max-width: 250px;
     display: block;
-    padding-right: 30px;
+    max-width: 250px;
     margin-bottom: 80px;
+    padding-right: 30px;
+
     font-size: 16px;
     line-height: 24px;
 
@@ -124,14 +126,16 @@
     }
 
     &::after {
-      counter-increment: section;
       content: counter(section);
       position: absolute;
       top: 85px;
       left: 100px;
-      font-size: 280px;
       z-index: -1;
+
+      font-size: 280px;
       color: #f2f2f2;
+
+      counter-increment: section;
     }
   }
 }
