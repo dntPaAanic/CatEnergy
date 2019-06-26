@@ -126,7 +126,7 @@
   }
 
   .program__icon {
-    top: 90px;
+    top: 50px;
     right: 62px;
     left: auto;
 
@@ -156,7 +156,7 @@
       width: 140px;
       height: 194px;
 
-      background-image: url("../../img/icon-cat-slim.svg");
+      background-image: url("../img/icon-cat-slim.svg");
     }
   }
 
@@ -175,5 +175,49 @@
   .program__link {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program {
+    width: 570px;
+    padding-top: 78px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+    padding-left: 52px;
+  }
+
+  .program__icon {
+    top: 45px;
+    right: auto;
+    left: 52px;
+
+    width: 100px;
+    height: 100px;
+  }
+
+  .program__title {
+    margin-bottom: 60px;
+    margin-left: 160px;
+  }
+
+  .program__icon--losing-weight {
+    &::after {
+      top: -6px;
+      left: 14px;
+
+      width: 70px;
+      height: 97px;
+    }
+  }
+
+  .program__icon--weight-gain {
+    &::after {
+      top: 22px;
+      left: -18px;
+
+      width: 134px;
+      height: 56px;
+    }
   }
 }

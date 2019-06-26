@@ -3,15 +3,24 @@
 }
 
 .programs__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .programs__item {
   width: 100%;
   margin-bottom: 20px;
+
   background-color: $background-color-lightgrey;
+}
+
+@media (min-width: $desktop-width) {
+  .programs__list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

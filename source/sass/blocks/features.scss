@@ -108,6 +108,7 @@
 @media (min-width: $tablet-width) {
   .features {
     counter-reset: section;
+    border-bottom: 1px solid #f2f2f2;
   }
 
   .features__item {
