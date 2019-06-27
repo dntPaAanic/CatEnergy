@@ -166,3 +166,44 @@
   }
 }
 
+@media (min-width: $desktop-width) {
+  .example {
+    padding: 0;
+
+    &::after {
+      background-image: linear-gradient(to right, #f2f2f2 52%, #eaeaea 52%);
+    }
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .example__content {
+    width: 465px;
+  }
+
+  .example__title {
+    padding-top: 65px;
+    padding-bottom: 144px;
+    padding-right: 30px;
+  }
+
+  .example__info {
+    display: block;
+  }
+
+  .example__result-wrapper {
+    background-color: $background-color-lightgrey;
+  }
+
+  .example__cost {
+    width: auto;
+    text-align: left;
+  }
+
+  .example__cost span {
+    margin-left: 50px;
+  }
+}

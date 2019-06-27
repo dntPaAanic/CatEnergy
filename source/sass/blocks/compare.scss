@@ -241,3 +241,44 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .compare {
+    width: 670px;
+  }
+
+  .compare__pictures {
+    width: 100%;
+    height: 530px;
+    padding-bottom: 129px;
+  }
+
+  .compare__before-picture-wrapper {
+    width: 100%;
+    padding-right: 40px;
+  }
+
+  .compare__after-picture-wrapper {
+    width: 50%;
+    right: -50px;
+  }
+
+  .compare__picture {
+    width: 690px;
+  }
+
+  .compare__picture-before {
+    top: 7px;
+    left: 20px;
+  }
+
+  .compare__picture--after {
+    top: 7px;
+    right: 10px;
+  }
+
+  .compare__range {
+    width: 100%;
+    left: 50px;
+  }
+}
