@@ -1,5 +1,20 @@
 .example {
-  background-color: $background-color-lightgrey;
+  position: relative;
+
+  padding-bottom: 30px;
+  overflow: hidden;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    z-index: -10;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: $background-color-lightgrey;
+  }
 }
 
 .example__wrapper {
@@ -29,61 +44,65 @@
 }
 
 .example__list {
-  list-style: none;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 0;
-  margin-left: 0;
   margin-right: 0;
   margin-bottom: 35px;
+  margin-left: 0;
   padding: 0;
-  align-items: center;
+
+  list-style: none;
   text-align: center;
 }
 
 .example__item {
-  max-width: 124px;
+  box-sizing: border-box;
   width: 100%;
+  max-width: 124px;
   padding-top: 15px;
   padding-right: 10px;
   padding-bottom: 5px;
   padding-left: 10px;
+
   border: 1px solid #cdcdcd;
   border-radius: 5px;
-  box-sizing: border-box;
 }
 
 .example__result-wrapper {
-  padding-right: 10px;
-  padding-left: 10px;
   max-width: 105px;
-  margin-left: auto;
   margin-right: auto;
   margin-bottom: -20px;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+
   background-color: $background-color-lightgrey;
 }
 
 .example__result {
-  color: $font-color-header;
-  font-size: 24px;
-  text-transform: uppercase;
-  line-height: 24px;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  color: $font-color-header;
+  text-transform: uppercase;
 }
 
 .example__result-description {
-  font-family: $font-family-additional;
+  margin-top: 8px;
+  margin-bottom: 0;
+
   font-size: 12px;
   line-height: 12px;
-  margin-bottom: 0;
-  margin-top: 8px;
+  font-family: $font-family-additional;
 }
 
 .example__cost {
-  color: $font-color-header;
   line-height: 20px;
-  text-transform: uppercase;
   text-align: center;
+  color: $font-color-header;
+  text-transform: uppercase;
 }
 
 
@@ -98,8 +117,9 @@
   }
 
   .example__description {
-    font-size: 16px;
     padding-right: 10px;
+
+    font-size: 16px;
   }
 
   .example__info {
@@ -116,9 +136,10 @@
   }
 
   .example__result-wrapper {
-    background-color: #ffffff;
     max-width: inherit;
     margin-bottom: -9px;
+
+    background-color: #ffffff;
   }
 
   .example__result {
@@ -127,8 +148,9 @@
   }
 
   .example__cost {
-    font-size: 20px;
     width: 185px;
+
+    font-size: 20px;
     text-align: right;
   }
 }
