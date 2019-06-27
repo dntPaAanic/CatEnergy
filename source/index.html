@@ -165,9 +165,20 @@
         <div class="contact__info">
           <h2 class="visually-hidden">Адрес</h2>
           <p class="contact__cooperation">приглашаем к сотрудничеству дилеров!</p>
-          <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="contact__address">ул. Большая Конюшенная, д. 19/8 <span class="contact__address-city">Санкт-Петербург</span></p>
         </div>
-        <div class="contact__map"></div>
+        <div class="contact__map">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x" type="image/webp">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x" type="image/webp">
+            <source srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x" type="image/webp">
+
+            <source media="(min-width: 1440px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png 2x">
+            <img class="contact__google-img" src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.png 2x" alt="Санкт-Петербург, ул. Большая Конюшенная, д. 19/8">
+          </picture>
+          <iframe class="contact__google-map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d499.6492357205944!2d30.322451907865144!3d59.938830045879385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1558445137791!5m2!1sru!2sby" width="320" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
       </section>
     </main>
 
@@ -204,5 +215,6 @@
       </div>
     </footer>
     <script src="js/script.min.js"></script>
+    <script src="js/picturefill.js"></script>
   </body>
 </html>

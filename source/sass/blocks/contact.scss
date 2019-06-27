@@ -1,0 +1,50 @@
+.contact {
+  background-color: $background-color-main;
+}
+
+.contact__info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.contact__cooperation {
+  width: 125px;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  margin-right: 17px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $font-color-header;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact__address {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family-additional;
+  font-size: 14px;
+  line-height: 20px;
+  color: $font-color-main;
+  font-weight: 400;
+}
+
+.contact__map {
+  position: relative;
+}
+
+.contact__google-img {
+  width: 320px;
+  height: 364px;
+  display: block;
+  margin: 0 auto;
+  z-index: -1;
+}
