@@ -3,26 +3,27 @@
 }
 
 .contact__info {
-  padding-top: 30px;
-  padding-bottom: 24px;
-  padding-left: 0;
-  padding-right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-sizing: border-box;
+  padding-top: 30px;
+  padding-right: 0;
+  padding-bottom: 24px;
+  padding-left: 0;
 }
 
 .contact__cooperation {
   width: 125px;
   margin-top: 0;
-  padding: 0;
-  margin-bottom: 0;
   margin-right: 17px;
+  margin-bottom: 0;
+  padding: 0;
+
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   color: $font-color-header;
-  font-weight: 400;
   text-transform: uppercase;
 }
 
@@ -30,11 +31,12 @@
   width: 140px;
   margin: 0;
   padding: 0;
-  font-family: $font-family-additional;
+
+  font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  font-family: $font-family-additional;
   color: $font-color-main;
-  font-weight: 400;
 }
 
 .contact__map {
@@ -42,19 +44,21 @@
 }
 
 .contact__google-img {
+  z-index: -1;
+
+  display: block;
   width: 320px;
   height: 364px;
-  display: block;
   margin: 0 auto;
-  z-index: -1;
 }
 
 .contact__google-map {
-  width: 100%;
-  height: 364px;
   position: absolute;
   top: 0;
   z-index: 3;
+
+  width: 100%;
+  height: 364px;
 }
 
 @media (min-width: $tablet-width) {
@@ -62,18 +66,21 @@
     justify-content: space-around;
     padding-top: 63px;
     padding-bottom: 58px;
+
     @include container;
   }
 
   .contact__cooperation {
     width: 195px;
     margin-right: 236px;
+
     font-size: 20px;
     line-height: 25px;
   }
 
   .contact__address {
     width: 195px;
+
     font-size: 16px;
     text-align: right;
   }
@@ -90,8 +97,9 @@
 
 @media (min-width: $desktop-width) {
   .contact__wrapper {
-    @include container;
     position: relative;
+
+    @include container;
   }
 
   .contact__info {
@@ -99,11 +107,13 @@
     top: 95px;
     left: 110px;
     z-index: 10;
+
     width: 570px;
     padding-top: 62px;
-    padding-bottom: 59px;
     padding-right: 76px;
+    padding-bottom: 59px;
     padding-left: 76px;
+
     background-color: #ffffff;
   }
 
@@ -114,6 +124,7 @@
 
   .contact__address {
     width: 168px;
+
     text-align: left;
   }
 
@@ -132,4 +143,3 @@
     height: 100%;
   }
 }
-

@@ -92,6 +92,7 @@
 
   .site-list__item--active {
     position: relative;
+
     &::after {
       content: "";
       position: absolute;
